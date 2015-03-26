@@ -17,4 +17,4 @@ var server = net.createServer(function(socket){
   socket.end(year + '-' + month + '-' + day + ' ' + hours + ':' + mins + '\n');
 });
 
-server.listen(8000);
+server.listen(program.argv[2]);
